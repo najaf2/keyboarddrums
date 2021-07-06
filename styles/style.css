@@ -3,7 +3,6 @@ html {
   background: url(../styles/background2.jpg) bottom center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
   overflow: hidden;
 
 }
@@ -12,6 +11,20 @@ body,html {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+.top {
+  color: white;
+  text-align:center; 
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+  background-color: black;
+  opacity: .5;
+
 }
 
 .keys {
