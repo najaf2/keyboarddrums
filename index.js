@@ -23,3 +23,19 @@ function removeTransition(e) {
 
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 
+const items=document.querySelectorAll('.key');
+
+function clickTrigger(){
+ let key = this.dataset.key;
+ const audio = document.querySelector(`audio[data-key="${key}"]`);
+ const item = this;
+ item.classList.add('playing');
+ audio.currentTime = 0;
+ audio.play();
+}
+
+function unclickTrigger(){
+ this.classList.remove('playing');
+}
+items.forEach(item=>item.addEventListener('mousedown',clickTrigger));
+items.forEach(item=>item.addEventListener('mouseup',unclickTrigger));
