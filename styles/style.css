@@ -1,7 +1,11 @@
 html {
   font-size: 11px;
   background: url('/background.jpg') bottom center;
+  background-repeat: no-repeat;
   background-size: cover;
+  z-index: -1;
+  overflow: hidden;
+
 }
 
 body,html {
@@ -13,7 +17,7 @@ body,html {
 .keys {
   display: flex;
   flex: 1;
-  min-height: 90vh;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
   transform: scale(.9);
