@@ -1,6 +1,9 @@
 window.addEventListener('keydown', playSounds);
+
+// May add click events later.
 // document.getElementsByClassName('keys')[0]
 // .addEventListener('click', playSounds);
+
 
 function playSounds(e) {
   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
